@@ -19,16 +19,49 @@
               <div class="row">
                 <div class="input-field col s12">
                   <i class="small material-icons prefix">search</i>
-                  <input type="text" id="autocomplete-input" class="autocomplete">
-                  <label for="autocomplete-input">Search for a City</label>
+                  <input type="text" id="search-city" class="autocomplete">
+                  <label for="autocomplete-input">City Name</label>
                   <a class="waves-effect waves-light btn searchbtn col s3">Search</a>
                 </div>
               </div>
             </div>
+            <div class="col s9">
+                <div class="row">
+                    <div class="col s12 m6 d-none" id="today-weather">
+                        <div class= "card white">
+                            <div class="card-content black text">
+                                <h3 id="city-name" class="city-name text center"></h3>
+                                <img id="current-pic" alt="">
+                                <p id="temperature"></p>
+                                <p id="humidity"></p>
+                                <p id="wind-speed"></p>
+                                <p id="UV-index"></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
           </div>
+          <div class="row d-none" id="fiveday-header">
+            <div class="col s12">
+                <h3>5-Day Forecast</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s1 forecast deep-purple darken-4 text white"></div>
+            <div class="col s1 forecast deep-purple darken-4 text white"></div>
+            <div class="col s1 forecast deep-purple darken-4 text white"></div>
+            <div class="col s1 forecast deep-purple darken-4 text white"></div>
+            <div class="col s1 forecast deep-purple darken-4 text white"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+          
       </body>
 
-
+    <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
